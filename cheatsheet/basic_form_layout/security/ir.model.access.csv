@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_basic_form_layout_category,basic_form_layout.category,model_basic_form_layout_category,base.group_user,1,1,1,1
+access_basic_form_layout_plant,basic_form_layout.plant,model_basic_form_layout_plant,base.group_user,1,1,1,1

@@ -1,0 +1,38 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="basic_form_layout.category_action">
+      <field name="name">Categories</field>
+      <field name="res_model">basic_form_layout.category</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.ui.view" id="basic_form_layout.category_action_form_view">
+      <field name="name">Categories</field>
+      <field name="model">basic_form_layout.category</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <notebook>
+              <page string="Category">
+                <group>
+                  <field name="name" />
+                  <field name="parent_id" />
+                </group>
+
+                <group>
+                  <field name="sub_category_ids" />
+                </group>
+              </page>
+
+              <page string="Plants">
+                <field name="plant_ids" />
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+  <data>
+    <menuitem name="Categories" id="basic_form_layout.main_menu" action="basic_form_layout.category_action"/>
+  </data>
+</odoo>
