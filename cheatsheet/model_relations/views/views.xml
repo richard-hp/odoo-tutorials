@@ -1,0 +1,10 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="model_relations.category_action">
+      <field name="name">Categories</field>
+      <field name="res_model">model_relations.category</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+  <data>
+    <menuitem name="Categories" id="model_relations.main_menu" action="model_relations.category_action"/>
+  </data>
+</odoo>
