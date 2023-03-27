@@ -1,0 +1,5 @@
+<odoo>
+  <data>
+    <menuitem name="Categories" id="basic_crud.main_menu" action="basic_crud.category_action"/>
+  </data>
+</odoo>

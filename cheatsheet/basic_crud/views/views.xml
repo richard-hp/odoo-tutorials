@@ -1,0 +1,10 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="basic_crud.category_action">
+      <field name="name">Categories</field>
+      <field name="res_model">basic_crud.category</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

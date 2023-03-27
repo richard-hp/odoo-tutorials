@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_basic_crud_category,basic_crud.category,model_basic_crud_category,base.group_user,1,1,1,1
