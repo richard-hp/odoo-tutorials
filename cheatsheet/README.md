@@ -44,5 +44,6 @@ This will start from simple tasks to progressively more complex ones.
 Links will also be provided back to the official docs for more context and theory to explain, these are mainly just code samples you can use to see exactly how to achieve what you want, step by step.
 
 1. [How do I perform basic CRUD actions?](./basic_crud)
-2. [How do I build relations between mdoels](./model_relations)
-3. [How do I customise form layouts](./basic_form_layout)
+2. [How do I build relations between models?](./model_relations)
+3. [How do I customise form layouts?](./basic_form_layout)
+4. [How do I build custom actions?](./custom_actions/)

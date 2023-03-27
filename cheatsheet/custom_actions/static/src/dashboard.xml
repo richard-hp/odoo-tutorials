@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+  <t t-name="custom_actions.dashboard_template" owl="1">
+    <h1 class="text-center py-5">Dashboard</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card shadow" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Categories</h5>
+              <p class="card-text">View categories.</p>
+              <a href="#menu_id=81&action=91" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+           <div class="card shadow" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Plants</h5>
+              <p class="card-text">View plants.</p>
+              <a href="#menu_id=84&action=92" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+    </div>
+  </t>
+</templates>

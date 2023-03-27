@@ -1,0 +1,7 @@
+<odoo>
+  <data>
+    <menuitem name="Plant Nursery" id="custom_actions.menu_root" />
+    <menuitem name="Dashboard" id="custom_actions.dashboard" action="custom_actions.dashboard_action" parent="custom_actions.menu_root" sequence="1" />
+    <menuitem name="Categories" id="custom_actions.categories" action="custom_actions.category_action" parent="custom_actions.menu_root" sequence="2" />
+  </data>
+</odoo>
