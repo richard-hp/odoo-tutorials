@@ -65,6 +65,16 @@ models/models.py
 
 you will see I've created a new model for Plant.
 
+```py
+class Plant(models.Model):
+  _name = 'model_relations.plant'
+  _description = 'Each plant lives inside a category'
+
+  name = fields.Char()
+  category_id = fields.Many2one(comodel_name='model_relations.category', string='Category')
+
+```
+
 In terms of the relations, I've added both sides of the relation, so categories can have sub-categories, and plants can belong to a category.
 
 ### 2 - Grant Access

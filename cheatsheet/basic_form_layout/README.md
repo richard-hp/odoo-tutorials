@@ -10,7 +10,9 @@ You would not have this problem in a traditional MVC framework, because you woul
 
 ## How does Odoo do this
 
-Odoo provides something called 'views'.  These are basically layout templates that the action will call upon in order to configure how things will be rendered on the frontend.
+Odoo provides something called 'views'.  These are basically layout templates that the action will call upon in order to configure how things will be rendered on the frontend.  With the action 'ir.actions.act_window', it has something called a 'view_mode'.  This provides some buttons in the task bar that allows the user to swtich between the different 'view_modes'.  You can provide a template per mode to customise how this is displayed, and also construct your own view_modes (more on that later).
+
+Here's what we will be doing:
 
 1. Create a new view to override the default view
 2. Link it back to the action so Odoo will use it
@@ -30,6 +32,35 @@ views/views.xml
 ```
 
 you will see I've created a new view.
+
+```xml
+  <record model="ir.ui.view" id="basic_form_layout.category_action_form_view">
+    <field name="name">Categories</field>
+    <field name="model">basic_form_layout.category</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <notebook>
+            <page string="Category">
+              <group>
+                <field name="name" />
+                <field name="parent_id" />
+              </group>
+
+              <group>
+                <field name="sub_category_ids" />
+              </group>
+            </page>
+
+            <page string="Plants">
+              <field name="plant_ids" />
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+```
 
 This view inherits 'ir.ui.view'.  Again, this is a pre-built component within Odoo base that has the ability to be rendered by the action.
 
